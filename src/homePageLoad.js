@@ -1,8 +1,8 @@
 import PizzaImage from "./pizza-1024x1024.jpg";
-function pageLoad() {
+function homePageLoad() {
 	const element = document.createElement("div");
 	const h1Name = document.createElement("h1");
-	h1Name.textContent = "Mamma Mia!";
+	h1Name.textContent = "Mamma Mia! Pizzeria!";
 	h1Name.classList.add("name");
 	element.appendChild(h1Name);
 	const imagePizza = new Image();
@@ -17,4 +17,4 @@ function pageLoad() {
 	return element;
 }
 
-export default pageLoad;
+export default homePageLoad;

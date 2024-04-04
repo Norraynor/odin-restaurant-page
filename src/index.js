@@ -1,6 +1,24 @@
-import pageLoad from './pageLoad';
+import aboutPageLoad from './aboutPageLoad';
+import homePageLoad from './homePageLoad';
+import menuPageLoad from './menuPageLoad';
+
+const content = document.querySelector("#content");
+const homeButton = document.querySelector('#home-button');
+const menuButton = document.querySelector("#menu-button");
+const aboutButton = document.querySelector("#about-button");
 
 (function component() {
-    document.querySelector("#content").appendChild(pageLoad());
-    
+    content.appendChild(homePageLoad());
+    homeButton.addEventListener('click', () => {
+        content.textContent = '';
+        content.appendChild(homePageLoad());
+    })
+    menuButton.addEventListener('click', () => {
+        content.textContent = '';
+        content.appendChild(menuPageLoad());
+    })
+    aboutButton.addEventListener("click", () => {
+        content.textContent = '';
+        content.appendChild(aboutPageLoad());
+    });
 })()
