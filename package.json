@@ -8,7 +8,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"watch": "webpack --watch",
 		"build": "webpack",
-		"dist-github-push": "git add dist && git commit -m \"Dist subtree commit\" && git subtree push --prefix dist origin gh-pages"
+		"dist-push": "git subtree push --prefix dist origin gh-pages"
 	},
 	"author": "Norraynor",
 	"license": "ISC",
