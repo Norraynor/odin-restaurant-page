@@ -37,6 +37,7 @@ function createCard(title, image, description) {
 	const foodImage = new Image();
 	foodImage.src = image;
 	foodImage.alt = `${title} image`;
+	foodImage.classList.add('menu-image');
 	card.appendChild(foodImage);
 	const para = document.createElement("p");
 	para.classList.add("description");

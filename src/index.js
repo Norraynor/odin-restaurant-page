@@ -1,6 +1,7 @@
 import aboutPageLoad from './aboutPageLoad';
 import homePageLoad from './homePageLoad';
 import menuPageLoad from './menuPageLoad';
+import './style.css'
 
 const content = document.querySelector("#content");
 const homeButton = document.querySelector('#home-button');

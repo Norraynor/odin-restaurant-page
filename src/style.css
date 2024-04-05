@@ -1,0 +1,13 @@
+.card{
+    width: 20vw;
+    background-color: burlywood;
+    padding: 8px;
+    margin:4px;
+}
+img{
+    width:30vw;
+    aspect-ratio: 1/1;
+}
+.menu-image{
+    width: 10vw;
+}
